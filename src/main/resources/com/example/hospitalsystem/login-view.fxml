@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="778.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hospitalsystem.HospitalController">
+  <children>
+    <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="778.0" style="-fx-background-color: white;">
+      <children>
+        <Label layoutX="137.0" layoutY="160.0" prefHeight="31.0" prefWidth="96.0" text="Login Account" textAlignment="JUSTIFY">
+          <font>
+            <Font name="Tahoma" size="15.0" />
+          </font>
+        </Label>
+
+        <TextField fx:id="username" layoutX="74.0" layoutY="211.0" prefHeight="31.0" prefWidth="238.0" promptText="Username" />
+        <PasswordField fx:id="password" layoutX="74.0" layoutY="263.0" prefHeight="31.0" prefWidth="238.0" promptText="Password" />
+        <Label fx:id="errorMessage" textFill="red" />
+        <CheckBox fx:id="showpassword" layoutX="80.0" layoutY="317.0" mnemonicParsing="false" text="Show Password" />
+        <Button fx:id="btn" layoutX="74.0" layoutY="393.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="238.0" text="Login" />
+        <Label layoutX="71.0" layoutY="464.0" prefHeight="18.0" prefWidth="122.0" text="Have no account yet ?" />
+          <Hyperlink layoutX="220.0" layoutY="461.0" onAction="#handleRegisterClick" style="-fx-color: pink;" text="Register here" />
+            <ImageView fitHeight="397.0" fitWidth="293.0" layoutX="433.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../../DSI21/SEM1/.Net/TP5/tp5/Ressources_TP5/logos.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="140.0" fitWidth="142.0" layoutX="115.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../../DSI21/SEM1/.Net/TP5/tp5/Ressources_TP5/login.jpg" />
+               </image>
+            </ImageView>
+      </children></AnchorPane>
+  </children>
+</StackPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="434.0" prefWidth="848.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hospitalsystem.HealthController">
+   <children>
+      <TableView fx:id="tableView" layoutX="22.0" layoutY="44.0" prefHeight="188.0" prefWidth="413.0">
+         <columns>
+            <TableColumn fx:id="colCin" prefWidth="75.0" text="CIN" />
+            <TableColumn fx:id="colFirstName" prefWidth="75.0" text="First Name" />
+            <TableColumn fx:id="colLastName" prefWidth="75.0" text="Last Name" />
+            <TableColumn fx:id="colAddress" prefWidth="75.0" text="Adresse" />
+            <TableColumn fx:id="colPhone" prefWidth="110.4000244140625" text="Phone Number" />
+         </columns>
+      </TableView>
+      <TableView fx:id="medicineTableView" layoutX="538.0" layoutY="44.0" prefHeight="188.0" prefWidth="227.0">
+         <columns>
+            <TableColumn fx:id="colMedicineRef" prefWidth="75.0" text="Ref" />
+            <TableColumn fx:id="colMedicineLibelle" prefWidth="75.0" text="Libelle" />
+            <TableColumn fx:id="colMedicinePrice" prefWidth="75.0" text="Price" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="54.0" fitWidth="37.0" layoutX="633.0" layoutY="292.0" onMouseClicked="#handlePlusIconClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../DSI21/SEM1/.Net/TP5/tp5/Ressources_TP5/icones/add_32.png" />
+         </image>
+      </ImageView>
+
+      <TableView fx:id="patMedTableView" layoutX="229.0" layoutY="241.0" prefHeight="150.0" prefWidth="354.0" />
+      <ImageView fitHeight="64.0" fitWidth="98.0" layoutX="14.0" layoutY="362.0" onMouseClicked="#redirectToMainPage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../DSI21/SEM1/.Net/TP5/tp5/Ressources_TP5/retour.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="37.0" layoutX="686.0" layoutY="296.0" onMouseClicked="#deletePatMed" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../DSI21/SEM1/.Net/TP5/tp5/Ressources_TP5/annuler.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
